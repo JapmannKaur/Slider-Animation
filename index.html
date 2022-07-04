@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trial</title>
+        <style>
+            body{
+                background-color: bisque;
+            }
+            h1{
+                font-size: 16px;
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bolder;
+                font-style: italic;
+                margin-top: 50px;
+            }
+            .main{
+                width:40%;
+                height: 300px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background-image: url('pom.jpg');
+                background-size: 100% 100%;
+                transform: translate(-50%,-50%);
+                box-shadow: 3px 5px 10px black;
+                animation:slider 9s infinite linear;
+            }
+
+            @keyframes slider{
+                0%{
+                    background-image: url('pom.jpg');
+                }
+                35%{
+                    background-image: url('husky.jpg');
+                }
+                75%{
+                    background-image: url('gol.jpg');
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS SLIDER ANIMATION</h1>
+        <div class="main">
+        </div>
+    </body>
+</html>
